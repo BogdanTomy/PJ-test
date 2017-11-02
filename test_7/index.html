@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<title>Star Wars</title>
+
+	<!-- Fonts -->
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+
+	<!-- Main CSS -->
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- jQuery CDN-->
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	 </script>
+
+	 <!-- Main JS -->
+
+	  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+
+	<!-- Header -->
+
+	<header>
+		<h1 class="main-title" >May the Force be with you!</h1>
+		<a href="#title" class="anchor">Continue</a>
+	</header>
+
+	<!-- Body -->
+
+	<div id="title" class="title">
+		<h3 class="title-text">Discover your Hero</h3>
+	</div>
+	<div id="main-container" class="main-container">
+
+	<!-- Card Container -->
+
+		<div id="content_body" class="content_body"></div>
+
+	<!-- Pages -->
+		<div class="pages">
+			<ul>
+				<li><a id="prev-page" class="anchor" href="#title">Prev</a></li>
+				<li><a id="next-page" class="anchor" href="#title">Next</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer>
+		<img src="img/footer-min.jpg" alt="footer">
+	</footer>
+
+	<!-- Audio -->
+
+	<audio src="audio/sw.mp3" preload="auto" controls></audio>
+	<div class="little-message">For Best Expirience...</div>
+
+	<!-- Template -->
+
+<template id="temp_card">
+	<div class="card">
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<p class="character-name">Luke Skywalker</p>
+					</div>
+					<div class="back">
+						<p>Main features:</p>
+						<ul class="main-characteristics">
+							<li class="char-height"></li>
+							<li class="char-mass"></li>
+							<li class="char-hair-color"></li>
+							<li class="char-skin-color"></li>
+							<li class="char-eye-color"></li>
+							<li class="char-birth-year"></li>
+							<li class="char-gender"></li>
+						</ul>
+						<div class="like">
+							<input type="checkbox" name="option[1]" value="1">I Like Him
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>	
+</template>
+</body>
+</html>
