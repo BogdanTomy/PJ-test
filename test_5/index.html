@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test 6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = prompt('Enter your value:'),
+			j = 0,
+			i = 2;
+
+		var a = new Array();
+
+		do {
+			if (x % i == 0) {
+				a[j] = i;
+				j++;
+				x = x / i;
+			}
+			else {
+				i++;
+			}
+		}
+		while (i < x);
+		a[j] = i; 
+
+		alert('Prime factors: ' + a + ';')
+		
+	</script>
+</body>
+</html>
